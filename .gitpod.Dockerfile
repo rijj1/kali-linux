@@ -19,8 +19,9 @@ RUN dpkg-reconfigure console-setup
 # Clean up
 RUN rm -rf /var/lib/apt/lists/*
 
-# Create a non-root user for Gitpod compatibility (Skip /workspace chown)
-RUN useradd -m gitpod
+# Create the Gitpod user with GID 33333 and UID 33333
+RUN groupadd -g 33333 gitpod && \
+    useradd -m -u 33333 -g gitpod gitpod
 
 # Optional: Create /workspace directory if it doesn't exist
 RUN mkdir -p /workspace && chown -R gitpod:gitpod /workspace
