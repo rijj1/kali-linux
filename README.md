@@ -29,7 +29,7 @@ Before you begin, ensure you have met the following requirements:
 ## Installation
 
 1. **Open Gitpod**: Click on the following link to create a new workspace for this project on Gitpod:
-   - [Open this project in Gitpod](https://gitpod.io/#https://github.com/yourusername/project-name)
+   - [Open this project in Gitpod](https://gitpod.io/#https://github.com/rijj1/kali)
 
 2. **Clone the Repository**:
    - If you're working with your own repository, clone it into your Gitpod workspace:
