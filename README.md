@@ -35,7 +35,7 @@ Before you begin, ensure you have met the following requirements:
    - If you're working with your own repository, clone it into your Gitpod workspace:
    
      ```bash
-     git clone https://github.com/yourusername/project-name.git
+     git clone https://github.com/rijj1/kali.git
      cd project-name
      ```
 
