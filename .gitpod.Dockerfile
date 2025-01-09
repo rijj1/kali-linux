@@ -4,13 +4,15 @@ FROM kalilinux/kali-rolling
 # Set DEBIAN_FRONTEND to non-interactive mode to avoid prompts during installation
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Install XFCE Desktop, Kali tools, and VNC Server
+# Install XFCE Desktop, Kali tools, VNC Server, and D-Bus
 RUN apt update && apt install -y \
     xfce4 \
     kali-linux-default \
     tightvncserver \
     novnc \
     websockify \
+    dbus-x11 \
+    dbus \
     && apt clean
 
 # Fix any issues with dpkg/console setup that may arise
