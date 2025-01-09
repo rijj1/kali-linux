@@ -1,0 +1,10 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: |
+      sudo apt update && sudo apt install -y xfce4 kali-linux-default tightvncserver novnc websockify
+      vncserver :1 -geometry 1280x800 -depth 24
+      websockify --web=/usr/share/novnc/ 6080 localhost:5901
+  - command: |
+      echo "Access Kali Linux Desktop at: https://6080-${GITPOD_WORKSPACE_URL#https://}"
