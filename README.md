@@ -29,18 +29,21 @@ Before you begin, ensure you have met the following requirements:
 ## Installation
 
 1. **Open Gitpod**: Click on the following link to create a new workspace for this project on Gitpod:
-   - [Open this project in Gitpod](https://gitpod.io/#https://github.com/rijj1/kali)
+   - [Open this project in Gitpod](https://gitpod.io/#https://github.com/rijj1/kali-linux)
 
 2. **Clone the Repository**:
    - If you're working with your own repository, clone it into your Gitpod workspace:
    
      ```bash
-     git clone https://github.com/rijj1/kali.git
-     cd project-name
+     git clone https://github.com/rijj1/kali-linux.git
+     gp validate
      ```
 
 3. **Start Kali Linux on Gitpod**:
    - Once inside the Gitpod workspace, the system will automatically build the Docker container and set up Kali Linux in a browser-based environment.
+   - Then Just set your password in terminal.
+   - Then you need to view the 6080 Port and open the vnc.html
+   - Enter your Password when authenticated. You will have the Kali Linux Ready to Use on your browser.
 
 4. **Access Kali Linux**:
    - Use the integrated `NoVNC` viewer to access the XFCE desktop environment. This provides a full desktop experience running Kali Linux in your browser.
